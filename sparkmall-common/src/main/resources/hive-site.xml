@@ -3,7 +3,7 @@
 <configuration>
     <property>
         <name>javax.jdo.option.ConnectionURL</name>
-        <value>jdbc:mysql://hadoop1:3306/metastore?createDatabaseIfNotExist=true</value>
+        <value>jdbc:mysql://hadoop100:3306/metastore?createDatabaseIfNotExist=true</value>
         <description>JDBC connect string for a JDBC metastore</description>
     </property>
 
@@ -14,6 +14,12 @@
     </property>
 
     <property>
+        <name>dfs.permissions</name>
+        <value>false</value>
+        <description>  </description>
+    </property>
+
+    <property>
         <name>javax.jdo.option.ConnectionUserName</name>
         <value>root</value>
         <description>username to use against metastore database</description>
@@ -21,7 +27,7 @@
 
     <property>
         <name>javax.jdo.option.ConnectionPassword</name>
-        <value>123123</value>
+        <value>000000</value>
         <description>password to use against metastore database</description>
     </property>
     <property>
